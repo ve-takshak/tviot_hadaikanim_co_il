@@ -19,7 +19,7 @@
             <div class="row">
                 <div class="col-sm-6">
                     <div class="form-group">
-                        <label for="">{{ __('Claim Number') }}<span class="text-danger">*</span></label>
+                        <label for="">{{ __('Claim Number') }}</label>
                         <input type="number" value="{{old('lawsuit_no')}}" name="lawsuit_no" class="form-control"  >
                     </div>
                 </div>
@@ -34,13 +34,13 @@
                 <hr>
                 <div class="col-sm-12">
                     <div class="form-group">
-                        <label for="">{{ __('Name Insured') }} <span class="text-danger">*</span></label>
+                        <label for="">{{ __('Name Insured') }}</label>
                         <input name="name" value="{{old('name')}}" type="text" class="form-control">
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="form-group">
-                        <label for="">{{ __('Cell Phone Number') }} <span class="text-danger">*</span></label>
+                        <label for="">{{ __('Cell Phone Number') }}</label>
                         <input type="text" value="{{old('mobile')}}" name="mobile" class="form-control">
                     </div>
                 </div>
@@ -58,7 +58,7 @@
                 </div>
                 <div class="col-sm-6">
                     <div class="form-group">
-                        <label for="">{{ __('License Number') }} <span class="text-danger">*</span></label>
+                        <label for="">{{ __('License Number') }}</label>
                         <input type="text" value="{{old('dl_number')}}" name="dl_number" class="form-control">
                     </div>
                 </div>
@@ -73,7 +73,7 @@
                 </div>
                 <div class="col-sm-6">
                     <div class="form-group">
-                        <label for="">{{ __('Manufacturer') }} <span class="text-danger">*</span></label>
+                        <label for="">{{ __('Manufacturer') }}</label>
                         <input type="text" value="{{old('manufacturer')}}" name="manufacturer" class="form-control">
                     </div>
                 </div>
@@ -96,7 +96,7 @@
                 
                 <div class="col-sm-6">
                     <div class="form-group">
-                        <label for="inc_company_id">{{ __('Insurance Company Name') }}<span class="text-danger">*</span></label>
+                        <label for="inc_company_id">{{ __('Insurance Company Name') }}</label>
                         <select id="inc_company_id" name="inc_company_id" class="form-control select2">
                             <option value="">-- {{ __('Select') }} --</option>
                             @foreach ($companies as $company)
@@ -132,13 +132,13 @@
                 {{--  --}}
                 <div class="col-sm-6">
                     <div class="form-group">
-                        <label for="">{{ __('Date Of Accident') }} <span class="text-danger">*</span></label>
+                        <label for="">{{ __('Date Of Accident') }}</label>
                         <input type="date" value="{{old('lawsuit_begin_date')}}" name="lawsuit_begin_date" class="form-control">
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="form-group">
-                        <label for="">{{ __('Payment date') }} <span class="text-danger">*</span></label>
+                        <label for="">{{ __('Payment date') }}</label>
                         <input type="date" value="{{old('payment_date')}}" name="payment_date" class="form-control">
                     </div>
                 </div>

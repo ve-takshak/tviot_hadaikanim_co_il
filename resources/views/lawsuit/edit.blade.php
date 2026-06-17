@@ -21,7 +21,7 @@
             <div class="row">
                 <div class="col-sm-6">
                     <div class="form-group">
-                        <label for="">{{ __('Claim Number') }}<span class="text-danger">*</span></label>
+                        <label for="">{{ __('Claim Number') }}</label>
                         <input type="number" value="{{$lawsuit->lawsuit_no}}" name="lawsuit_no" class="form-control" >
                     </div>
                 </div>
@@ -36,13 +36,13 @@
                 <hr>
                 <div class="col-sm-12">
                     <div class="form-group">
-                        <label for="">{{ __('Name Insured') }} <span class="text-danger">*</span></label>
+                        <label for="">{{ __('Name Insured') }}</label>
                         <input name="name" value="{{$lawsuit->client->name}}" type="text" class="form-control">
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="form-group">
-                        <label for="">{{ __('Cell Phone Number') }} <span class="text-danger">*</span></label>
+                        <label for="">{{ __('Cell Phone Number') }}</label>
                         <input type="text" value="{{$lawsuit->client->mobile}}" name="mobile" class="form-control">
                     </div>
                 </div>
@@ -60,7 +60,7 @@
                 </div>
                 <div class="col-sm-6">
                     <div class="form-group">
-                        <label for="">{{ __('License Number') }}<span class="text-danger">*</span></label>
+                        <label for="">{{ __('License Number') }}</label>
                         <input type="text" value="{{$lawsuit->client->dl_number}}" name="dl_number" class="form-control">
                     </div>
                 </div>
@@ -69,19 +69,19 @@
                 <hr>
                 <div class="col-sm-12">
                     <div class="form-group">
-                        <label for="">{{ __('Vehicle Number') }} <span class="text-danger">*</span></label>
+                        <label for="">{{ __('Vehicle Number') }}</label>
                         <input type="text" value="{{$lawsuit->car->license_plate ?? ''}}" name="license_plate" class="form-control">
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="form-group">
-                        <label for="">{{ __('Manufacturer') }} <span class="text-danger">*</span></label>
+                        <label for="">{{ __('Manufacturer') }}</label>
                         <input type="text" value="{{$lawsuit->car->manufacturer ?? ''}}" name="manufacturer" class="form-control">
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="form-group">
-                        <label for="">{{ __('Year') }} <span class="text-danger">*</span></label>
+                        <label for="">{{ __('Year') }}</label>
                         <input type="number" value="{{$lawsuit->car->year ?? ''}}" name="year" class="form-control">
                     </div>
                 </div>
@@ -98,7 +98,7 @@
                 
                 <div class="col-sm-6">
                     <div class="form-group">
-                        <label for="inc_company_id">{{ __('Insurance Company Name') }} <span class="text-danger">*</span></label>
+                        <label for="inc_company_id">{{ __('Insurance Company Name') }}</label>
                         <select id="inc_company_id" name="inc_company_id" class="form-control select2">
                             <option value="">-- {{ __('Select') }} --</option>
                             @foreach ($companies as $company)
@@ -134,13 +134,13 @@
                 {{--  --}}
                 <div class="col-sm-6">
                     <div class="form-group">
-                        <label for="">{{ __('Date Of Accident') }} <span class="text-danger">*</span></label>
+                        <label for="">{{ __('Date Of Accident') }}</label>
                         <input type="date" value="{{$lawsuit->lawsuit_begin_date_formatted}}" name="lawsuit_begin_date" class="form-control">
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="form-group">
-                        <label for="">{{ __('Payment date') }} <span class="text-danger">*</span></label>
+                        <label for="">{{ __('Payment date') }}</label>
                         <input type="date" value="{{$lawsuit->payment_date_formatted}}" name="payment_date" class="form-control">
                     </div>
                 </div>
