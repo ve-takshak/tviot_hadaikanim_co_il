@@ -168,7 +168,12 @@
                 <div class="row mb-3">
                     <div class="col-sm-10">
                         <p>{{ $comment->message }}</p>
-                        <small>{{ __('Added On') }}: {{ $comment->created_at->format('d-m-Y') }}</small>
+                        <small>
+                            @if($comment->user)
+                                {{ __('Added By') }}: {{ $comment->user->name }} | 
+                            @endif
+                            {{ __('Added On') }}: {{ $comment->created_at->format('d-m-Y') }}
+                        </small>
                     </div>
                     <div class="col-sm-2">
                         @can('insurance_claim_comment_delete')
@@ -251,6 +256,7 @@
                         <option {{$lawsuit->status == 2 ? 'selected' : ''}} value="2">{{ __('Repeated claims for settlement/policy') }}  </option>
                         <option {{$lawsuit->status == 3 ? 'selected' : ''}} value="3">{{ __('Under attorney management/handling') }} </option>
                         <option {{$lawsuit->status == 4 ? 'selected' : ''}} value="4">{{ __('Settlement / policy claims') }} </option>
+                        <option {{$lawsuit->status == 5 ? 'selected' : ''}} value="5">{{ __('Pre-Archive') }} </option>
                         <option {{$lawsuit->status == 0 ? 'selected' : ''}} value="0">{{ __('Archive') }} </option>
                        </select>
 

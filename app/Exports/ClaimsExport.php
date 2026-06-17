@@ -49,7 +49,7 @@ class ClaimsExport implements FromCollection, WithHeadings
                 'Check Total' => $claim->check_total,
                 'Deductible' => $claim->deductible,
                 'VAT' => $claim->vat,
-                'Status' => $claim->status_text,
+                'Status' => __($claim->status_text),
                 'Invoice No.' => $claim->invoice_no, 
             ];
         });

@@ -233,6 +233,7 @@ if($insurance_claim->car_id){
     {
         $comment = new Comment();
         $comment->lawsuit_id = $request->lawsuit_id;
+        $comment->user_id = Auth::user()->id;
         $comment->message = $request->comment;
         $comment->save();
         return redirect()->route('insurance-claims.show', [$request->lawsuit_id])->with('success', __('Comment created successfully!'));

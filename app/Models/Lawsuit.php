@@ -52,7 +52,8 @@ class Lawsuit extends Model
             0 => 'Archive',
             2 => 'Repeated claims for settlement/policy',
             3 => 'Under attorney management/handling',
-            4 => 'Settlement / policy claims'
+            4 => 'Settlement / policy claims',
+            5 => 'Pre-Archive'
         ];
 
         return $statuses[$this->status] ?? 'Unknown';

@@ -44,6 +44,9 @@
                     <option @selected($status == '4') value="4">
                         {{ __('Settlement / policy claims') }}
                     </option>
+                    <option @selected($status == '5') value="5">
+                        {{ __('Pre-Archive') }}
+                    </option>
                     <option @selected($status == '0') value="0">{{ __('Archive') }}</option>
                 </select>
             </div>
@@ -76,6 +79,7 @@
         2 => 'Repeated claims for settlement/policy',
         3 => 'Under attorney management/handling',
         4 => 'Settlement / policy claims',
+        5 => 'Pre-Archive',
     ];
 @endphp
 <h3>{{ __('Status') }} -
